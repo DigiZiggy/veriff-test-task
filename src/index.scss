@@ -1,0 +1,28 @@
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@100;400&display=swap');
+
+// Colors
+$content-brand: #11615C;
+$content-brand-hover: rgba(17,97,92, 0.75);
+$content-brand-disabled: #88B0AE;
+$content-brand-highlight: rgba(212, 250, 237, 0.75);
+$content-default: #212121;
+$content-disabled: #9E9E9E;
+$content-reverse: #FFFFFF;
+$border-brand: #11615C;
+$border-default: #EEEEEE;
+$border-focus: #14E5C5;
+$background-body: #FFFFFF;
+$background-brand: #11615C;
+$background-disabled: #EEEEEE;
+$background-hover: #F5F5F5;
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: -0.15px;
+  color: $content-default;
+  background-color: $background-body;
+}

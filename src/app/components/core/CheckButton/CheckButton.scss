@@ -1,0 +1,46 @@
+@import "./../../../../index.scss";
+
+.btn-group {
+  height: 32px;
+
+  .btn {
+    background-color: $background-body;
+    color: $content-brand;
+    border-color: $border-brand;
+    width: 56px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: -0.15px;
+
+    &.selected {
+      color: $content-reverse;
+      background-color: $background-brand;
+
+      &:hover {
+        color: $content-reverse;
+        background-color: $content-brand-hover;
+      }
+
+      &[disabled] {
+        background-color: $background-disabled;
+        border-color: $border-default;
+      }
+    }
+
+    &:hover {
+      color: $content-brand;
+      background-color: $content-brand-highlight;
+    }
+
+    &:focus {
+      outline: 2px solid $border-focus;
+      z-index: 3 !important;
+    }
+
+    &[disabled] {
+      color: $content-disabled;
+      border-color: $border-default;
+    }
+  }
+}

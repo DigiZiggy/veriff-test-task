@@ -1,0 +1,72 @@
+@import "./../../../../index.scss";
+
+.container {
+  .content {
+    .content-message,
+    .content-title {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 10%;
+      margin: auto;
+    }
+
+    .content-message,
+    .content-title {
+      text-align: center;
+      height: fit-content;
+      width: fit-content;
+    }
+
+    .content-title,
+    .content-title {
+      h1 {
+        font-size: 60px;
+        font-weight: 900;
+        line-height: 4rem;
+        text-transform: uppercase;
+        color: $content-brand;
+      }
+    }
+
+    .content-message {
+      top: 60%;
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    .content-buttons {
+      position: absolute;
+      bottom: 0;
+      padding: 12px;
+
+      .btn {
+        font-size: inherit;
+        line-height: inherit;
+        font-weight: 500;
+        height: 36px;
+        width: 322px;
+        color: $content-reverse;
+        background-color: $content-brand;
+        border-color: $content-brand;
+
+        &[disabled] {
+          background-color: $content-brand-disabled;
+          border-color: $content-brand-disabled;
+        }
+      }
+    }
+
+    &.error-content .content-title h1 {
+      color: indianred;
+    }
+
+    &.error-content .content-buttons {
+      .btn {
+        background-color: indianred;
+        border-color: indianred;
+      }
+    }
+  }
+}

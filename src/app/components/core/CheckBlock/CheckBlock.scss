@@ -1,0 +1,27 @@
+@import "./../../../../index.scss";
+
+.block {
+  width: 346px;
+  padding: 12px 16px 12px 16px;
+
+  &:hover {
+    background-color: $background-hover;
+  }
+
+  &.disabled {
+    background-color: initial;
+    color: $content-disabled;
+
+    &:hover {
+      background-color: initial;
+    }
+  }
+
+  &.focused {
+    background-color: $content-brand-highlight;
+  }
+
+  .block-title {
+    margin-bottom: 0.5rem;
+  }
+}
